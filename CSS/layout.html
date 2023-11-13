@@ -8,6 +8,7 @@
             width: 100%;
             height: 120px;
         }
+
         .logo {
             width: 25%;
             height: 100%;
@@ -23,6 +24,113 @@
             margin-left: 5px;
         }
 
+        .nav {
+            border: 1px solid red;
+            width: 100%;
+            height: 30px;
+            margin-top: 10px;
+        }
+
+
+        .wrapper {
+            width: 100%;
+            height: 500px;
+            margin-top: 10px;
+        }
+
+        .footer {
+            border: 1px solid red;
+            width: 100%;
+            height: 30px;
+            margin-top: 10px;
+        }
+
+        .left {
+            width: 15%;
+            height: 100%;
+            float: left;
+        }
+        .mid {
+            width: 65%;
+            height: 100%;
+            margin: 0 10px;
+            float: left;
+        }
+        .right {
+            border: 1px solid red;
+            width: calc(100% - 15% - 65% - 6px - 20px);
+            height: 100%;
+            float: left;
+        }
+
+        .left-top {
+            border: 1px solid red;
+            width: 100%;
+            height: 40%;
+        }
+
+        .left-bot {
+            margin-top: 10px;
+            border: 1px solid red;
+            width: 100%;
+            height: 50%;
+        }
+
+        .mid-top {
+            width: 100%;
+            height: 30%;
+        }
+
+        .mid-bot {
+            width: 100%;
+            height: 70%;
+            /*overflow: auto;*/
+        }
+
+        .hot-news {
+            width: 50%;
+            height: 100%;
+            border: 1px solid red;
+            float: left;
+        }
+
+        .slide {
+            width: calc(100% - 50% - 10px - 4px);
+            height: 100%;
+            margin-left: 10px;
+            border: 1px solid red;
+            float: left;
+        }
+
+        .item {
+            border: 1px solid red;
+            height: 150px;
+            width: calc(100%/3 - 2px - 10px);
+            margin: 10px 5px;
+            float: left;
+        }
+
+
+        @media only screen and (max-width: 1000px) {
+            .left {
+                display: none;
+            }
+
+            .mid {
+                width: 80%;
+            }
+
+        }
+
+        @media only screen and (max-width: 700px) {
+            .right {
+                display: none;
+            }
+
+            .mid {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -31,7 +139,27 @@
     <div class="banner"></div>
 </div>
 <div class="nav"></div>
-<div class="wrapper"></div>
+<div class="wrapper">
+    <div class="left">
+        <div class="left-top"></div>
+        <div class="left-bot"></div>
+    </div>
+    <div class="mid">
+        <div class="mid-top">
+            <div class="hot-news"></div>
+            <div class="slide"></div>
+        </div>
+        <div class="mid-bot">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+    <div class="right"></div>
+</div>
 <div class="footer"></div>
 
 </body>
