@@ -14,6 +14,7 @@ import java.util.List;
 @WebServlet(name = "helloC06Servlet", value = "/home")
 public class HelloC06Servlet extends HttpServlet {
 
+
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 //        List<String> strings = new ArrayList<>();
 //        strings.add("Đề");
@@ -22,7 +23,7 @@ public class HelloC06Servlet extends HttpServlet {
 //        response.setContentType("text/html");
 //        PrintWriter printWriter = response.getWriter();
 //        String str = "";
-//        for (String s: strings) {
+//        for (String s: s1trings) {
 //            str += "<h1>" + s + "</h1>";
 //        }
 //        printWriter.write(str);
