@@ -69,15 +69,15 @@ public class StudentController extends HttpServlet {
     }
 
     public void deleteStudent(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        System.out.println(req.getParameter("id"));
         int idDelete = Integer.parseInt(req.getParameter("id"));
         studentService.delete(idDelete);
         resp.sendRedirect("/students?action=findAll");
     }
     public void addStudent(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        int id = Integer.parseInt(req.getParameter("id"));
         String name = req.getParameter("name");
         String image = req.getParameter("image");
-        Student student = new Student(id, name, image);
+        Student student = new Student(name, image);
         studentService.add(student);
         resp.sendRedirect("/students?action=findAll");
     }

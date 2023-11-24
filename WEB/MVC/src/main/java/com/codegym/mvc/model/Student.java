@@ -11,6 +11,11 @@ public class Student {
         this.image = image;
     }
 
+    public Student(String name, String image) {
+        this.name = name;
+        this.image = image;
+    }
+
     public int getId() {
         return id;
     }

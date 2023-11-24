@@ -14,7 +14,6 @@
 <a href="http://localhost:8080/students?action=findAll">Trang chủ</a>
 <form action="/students" method="post">
     <input type="hidden" name="action" value="create">
-    <input type="number" name="id" placeholder="id">
     <input type="text" name="name" placeholder="name">
     <input type="text" name="image" placeholder="image">
     <button>Add</button>
